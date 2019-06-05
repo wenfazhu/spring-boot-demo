@@ -28,5 +28,6 @@ HELP.md
 ### VS Code ###
 .vscode/
 
-### maven ###
-.mvn/
+### other ###
+.mvn
+
