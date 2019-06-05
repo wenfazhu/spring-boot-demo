@@ -3,19 +3,9 @@
 
 <mapper namespace="com.zwf.modules.sys.dao.SysUserDao">
 	
-	<!-- 查询用户的所有权限 -->
-	<select id="queryAllPerms" resultType="string">
-		select m.perms from sys_user_role ur 
-			LEFT JOIN sys_role_menu rm on ur.role_id = rm.role_id 
-			LEFT JOIN sys_menu m on rm.menu_id = m.menu_id 
-		where ur.user_id = #{userId}
-	</select>
-	
-	<!-- 查询用户的所有菜单ID --> 
-	<select id="queryAllMenuId" resultType="long">
-		select distinct rm.menu_id from sys_user_role ur 
-			LEFT JOIN sys_role_menu rm on ur.role_id = rm.role_id 
-		where ur.user_id = #{userId}
+	<!-- 查询用户 -->
+	<select id="queryAllUser" resultType="List">
+		select * from sys_user
 	</select>
 
 </mapper>

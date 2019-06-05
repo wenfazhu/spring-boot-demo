@@ -14,9 +14,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zwf.modules.sys.dao.SysUserDao;
 import com.zwf.modules.sys.entity.SysUserEntity;
+import com.zwf.modules.sys.utils.R;
 
 /**
  * 这里边是MP的dao层的一些常用方法测试方法
@@ -58,8 +61,19 @@ public class UserDaoTests {
 		List<SysUserEntity> list = sysUserDao.selectList(null);
 		list.forEach(System.out::println);
 	}
-	
-	
+	/**
+	 * 分页查询
+	 */
+	@Test
+	public void selectPage() {
+		Page<SysUserEntity> page = new Page<>(1, 2);
+
+		IPage<SysUserEntity> userIPage = sysUserDao.selectPage(page, new QueryWrapper<SysUserEntity>());
+		userIPage.getRecords().forEach(System.out::println);
+	}
+
+
+
 	@Test
 	public void deleteById() {
 		//删除不存在的mp的逻辑是删除成功，测试时此处的id换成你表里的id
@@ -92,7 +106,7 @@ public class UserDaoTests {
 		System.out.println("删除条数：" + rows);
 	}
 
-	
+
 
 
 }

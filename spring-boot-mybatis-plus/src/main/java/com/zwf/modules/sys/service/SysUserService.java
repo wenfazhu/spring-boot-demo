@@ -6,5 +6,4 @@ import com.zwf.modules.sys.entity.SysUserEntity;
 
  public interface SysUserService extends IService<SysUserEntity> {
 
-		
  }

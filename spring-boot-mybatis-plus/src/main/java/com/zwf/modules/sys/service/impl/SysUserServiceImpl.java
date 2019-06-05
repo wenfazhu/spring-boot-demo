@@ -13,4 +13,5 @@ import com.zwf.modules.sys.service.SysUserService;
 @Service("sysUserService")
 public class SysUserServiceImpl extends ServiceImpl<SysUserDao, SysUserEntity> implements SysUserService {
 
+
 }
