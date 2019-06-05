@@ -466,3 +466,19 @@ Caused by: java.lang.ClassNotFoundException: org.springframework.jdbc.datasource
 	at java.lang.ClassLoader.loadClass(Unknown Source) ~[na:1.8.0_152]
 	... 37 common frames omitted
 
+2019-06-05 15:08:52.739  INFO 35392 --- [main] c.z.s.SpringBootDemoApplication          : Starting SpringBootDemoApplication on LAPTOP-K985UT82 with PID 35392 (D:\Java\Java_study\spring-boot-demo\spring-boot-demo\target\classes started by 86182 in D:\Java\Java_study\spring-boot-demo\spring-boot-demo)
+2019-06-05 15:08:52.742  INFO 35392 --- [main] c.z.s.SpringBootDemoApplication          : The following profiles are active: dev
+2019-06-05 15:08:53.412  INFO 35392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-06-05 15:08:53.428  INFO 35392 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-05 15:08:53.428  INFO 35392 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-06-05 15:08:53.490  INFO 35392 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/zwf]    : Initializing Spring embedded WebApplicationContext
+2019-06-05 15:08:53.491  INFO 35392 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 716 ms
+2019-06-05 15:08:53.639  INFO 35392 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-06-05 15:08:53.759  INFO 35392 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/zwf'
+2019-06-05 15:08:53.763  INFO 35392 --- [main] c.z.s.SpringBootDemoApplication          : Started SpringBootDemoApplication in 1.337 seconds (JVM running for 1.969)
+2019-06-05 15:08:53.765  INFO 35392 --- [main] c.z.s.SpringBootDemoApplication          : 
+----------------------------------------------------------
+	Application 'dev' is running! Access URLs:
+	Local: 		http://192.168.1.7:8081
+	----------------------------------------------------------
+2019-06-05 15:08:53.766  INFO 35392 --- [main] c.z.s.SpringBootDemoApplication          : 程序启动完成!
