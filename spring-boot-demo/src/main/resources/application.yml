@@ -1,0 +1,38 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8081
+    connection-timeout: 5000ms
+    servlet: 
+      context-path: /zwf
+
+spring:
+    # 环境 dev|uat|prd
+    profiles:
+        active: dev
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    mvc:
+        throw-exception-if-no-handler-found: true
+        static-path-pattern: /static/**
+    resources:
+        add-mappings: false    
+    servlet: 
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
+    
+    
+logging:
+    #path: E:\zwf\base-boot
+    file: base-boot.log
+    level:
+      root: info 
+      com.base.fintech: debug
+      com.xrosstools.xunit: debug 
