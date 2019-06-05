@@ -1,14 +1,10 @@
 package com.zwf.modules.sys.entity;
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import lombok.Data;
 
 @Data
-@TableName("sys_user")
 public class SysUserEntity {
 
 
@@ -18,7 +14,6 @@ public class SysUserEntity {
 	/**
 	 * 用户ID
 	 */
-	@TableId
 	private Long userId;
 
 	/**
@@ -29,7 +24,6 @@ public class SysUserEntity {
 	/**
 	 * 密码
 	 */
-	@TableField
 	private String password;
 
 	/**

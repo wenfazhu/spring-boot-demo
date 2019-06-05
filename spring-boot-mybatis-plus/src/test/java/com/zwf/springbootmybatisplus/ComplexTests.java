@@ -121,7 +121,7 @@ public class ComplexTests {
     public void selectByWarpper() {
         // 条件构造器
         QueryWrapper<SysUserEntity> userQuery = Wrappers.query();
-        userQuery.likeRight("username", "zz").or().ge("password", "zz").orderByDesc("id");
+        userQuery.likeRight("username", "zz").or().ge("password", "zz").orderByDesc("user_id");
 
         List<SysUserEntity> userList = sysUserDao.selectList(userQuery);
         userList.forEach(System.out::println);
