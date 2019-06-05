@@ -30,4 +30,5 @@ HELP.md
 
 ### other ###
 .mvn
+/logs
 

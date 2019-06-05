@@ -34,5 +34,4 @@ logging:
     file: logs\base-boot.log
     level:
       root: info 
-      com.base.fintech: debug
-      com.xrosstools.xunit: debug 
+      com.zwf: debug

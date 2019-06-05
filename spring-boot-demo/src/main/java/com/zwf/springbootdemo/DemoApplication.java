@@ -12,13 +12,13 @@ import org.springframework.core.env.Environment;
 
 
 @SpringBootApplication
-public class SpringBootDemoApplication {
+public class DemoApplication {
 
-	private static final Logger log = LoggerFactory.getLogger(SpringBootDemoApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
 
 	
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(SpringBootDemoApplication.class);
+		SpringApplication app = new SpringApplication(DemoApplication.class);
 		ApplicationContext appc =  app.run(args);
 		Environment env = appc.getEnvironment();
 		String ip = "localhost";
