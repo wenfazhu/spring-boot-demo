@@ -28,7 +28,7 @@ import com.zwf.datasource.DynamicDataSourceConfig;
 @ServletComponentScan
 @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 @ComponentScan(basePackages = {"com.zwf"})
-@MapperScan("com.zwf.modues.*")
+//@MapperScan("com.zwf.modules.*")
 public class MpApplication extends SpringBootServletInitializer{
 
 	private static final Logger log = LoggerFactory.getLogger(MpApplication.class);

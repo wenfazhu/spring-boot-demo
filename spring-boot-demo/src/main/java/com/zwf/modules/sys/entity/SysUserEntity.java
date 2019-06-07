@@ -26,10 +26,6 @@ public class SysUserEntity {
 	 */
 	private String password;
 
-	/**
-	 * 盐值
-	 */
-	private String salt;
 
 	/**
 	 * 邮箱
@@ -42,20 +38,6 @@ public class SysUserEntity {
 	private String mobile;
 
 
-	/**
-	 * 姓名
-	 */
-	private String name;
-
-	/**
-	 * 类型  1：系统用户   2：其他用户
-	 */
-	private Integer type;
-
-	/**
-	 * 状态  0：禁用   1：正常
-	 */
-	private Integer status;
 
 	/**
 	 * 创建者ID
@@ -79,10 +61,6 @@ public class SysUserEntity {
 	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8") 
 	private Date updateTime;
 
-	/**
-	 * 部门ID
-	 */
-	private String deptId;
 
 
 

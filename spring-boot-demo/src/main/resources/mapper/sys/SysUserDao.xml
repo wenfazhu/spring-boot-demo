@@ -2,10 +2,37 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.zwf.modules.sys.dao.SysUserDao">
-	
-	<!-- 查询用户 -->
-	<select id="queryAllUser" resultType="List">
-		select * from sys_user
+
+	<!-- 新增用户 -->
+	<insert id="save" parameterType="com.zwf.modules.sys.entity.SysUserEntity">
+		insert into
+		sys_user(username,password,mobile,email)
+		values(#{username},#{password},#{mobile},#{email})
+	</insert>
+
+	<!-- 使用id删除用户 -->
+	<delete id="deleteById" parameterType="Map">
+		delete from sys_user
+		where
+		user_id = #{userId}
+	</delete>
+
+	<!-- 使用id更新用户 -->
+	<update id="updateById" parameterType="com.zwf.modules.sys.entity.SysUserEntity">
+		update sys_user set
+		<if test="username !=null and username != ''">username = #{username}</if>
+		<if test="password !=null and password != ''">,password = #{password}</if>
+		<if test="mobile !=null and mobile != ''">,mobile = #{mobile},</if>
+		<if test="email !=null and email != ''">,email = #{email},</if>
+		where
+		user_id = #{userId}
+	</update>
+
+	<!-- 查询用户列表 -->
+	<select id="selectList" parameterType="com.zwf.modules.sys.entity.SysUserEntity" resultType="com.zwf.modules.sys.entity.SysUserEntity">
+		select user_id,username,password,mobile,email from sys_user
 	</select>
+
+
 
 </mapper>
