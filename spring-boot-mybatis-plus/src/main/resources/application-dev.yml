@@ -6,11 +6,11 @@ spring:
         driverClassName: com.mysql.cj.jdbc.Driver
         druid: 
             first:  #数据源1 
-                url: jdbc:mysql://47.101.156.168:3306/spring_boot_demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+                url: jdbc:mysql://localhost:3306/spring_boot_demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
                 username: root
                 password: 123456
             second:  #数据源2
-                url: jdbc:mysql://47.101.156.168:3306/spring_boot_demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+                url: jdbc:mysql://localhost:3306/spring_boot_demo?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
                 username: root
                 password: 123456
             initial-size: 10
