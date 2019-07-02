@@ -1,4 +1,4 @@
-package com.zwf.datasource;
+package com.zwf.datasources;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

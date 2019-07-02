@@ -17,7 +17,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 
-import com.zwf.datasource.DynamicDataSourceConfig;
+import com.zwf.datasources.DynamicDataSourceConfig;
 /**
  * 
  * @author zwf

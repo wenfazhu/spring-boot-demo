@@ -1,4 +1,4 @@
-package com.zwf.datasource;
+package com.zwf.datasources;
 
 import java.util.HashMap;
 import java.util.Map;

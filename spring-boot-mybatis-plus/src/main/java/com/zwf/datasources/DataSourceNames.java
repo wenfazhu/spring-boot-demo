@@ -1,4 +1,4 @@
-package com.zwf.datasource;
+package com.zwf.datasources;
 
 /**
  * 增加多数据源，在此配置
